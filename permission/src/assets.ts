@@ -6,7 +6,7 @@ export class Permission{
     @Property()
     public P_ID:string 
     @Property()
-    public R_ID:string
+    public R_ID:string[]
     @Property()
     public D_ID:string
     @Property()
