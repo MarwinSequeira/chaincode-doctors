@@ -1,4 +1,7 @@
 import {Object,Property} from 'fabric-contract-api'
+
+type status_request = "Allowed" | "Denied" | "Expired"
+type status_permission = "Active" | "Expired"
 @Object()
 export class Permission{
     @Property()
@@ -12,7 +15,7 @@ export class Permission{
     @Property()
     public Timestamp:string
     @Property()
-    public StatusOfRequest:string
+    public StatusOfRequest:status_request
     @Property()
     public Organization:string
     @Property()
